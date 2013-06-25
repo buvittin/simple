@@ -1,0 +1,67 @@
+/* CSS Document */
+
+* {
+	font-family: "Verdana";
+}
+
+body {
+	background-color:#F7F7F7;
+}
+
+header {
+}
+
+nav {
+	margin: 5px;
+	padding: 5px;
+	background-color: #059E1D;
+}
+
+footer {
+	text-align: center;
+}
+
+/*-----------------------------------*/
+
+#bbody {
+	
+}
+
+.nav_button {
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+} 
+.nav_button:hover {
+	background-color: #2EAE2B;
+	cursor: pointer;
+}
+
+hr {
+	margin: 0px;
+}
+
+/*--------------------------------------*/
+
+.TheSameClass {
+	margin: auto;
+	width: 1000px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/*----------------------------------class ctrls*/
+
+.ctrls_table {
+	border: 1px dashed;
+	border-spacing: 0px;
+	padding: 2px;
+}
+
+.ctrls_table * {
+	padding: 3px;
+}
+
+.ctrls_table th {
+	background-color: #999;	
+}

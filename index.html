@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/css1.css">
+<script type="text/javascript" src="js/js1.js"></script>
+<script type="text/javascript" src="js/dropdowncontent.js"></script>
+<title>index</title>
+</head>
+
+<body>
+
+<header class="TheSameClass">
+
+</header>
+
+<nav class="TheSameClass">
+	<a class="nav_button">Home</a>
+	<a class="nav_button">About</a>
+	<a class="nav_button">Contact</a>        
+</nav>
+
+<div id="bbody" class="TheSameClass">
+<hr /><br />
+<aside id="left">
+</aside>
+
+<aside id="right">
+
+<fieldset>
+<legend>Đây là cái mẩu table</legend>
+<table class="ctrls_table">
+<caption>Đây là cái tiêu đề</caption>
+
+<tr class="head">
+<th>Stt</th>
+<th>Họ tên</th>
+<th>Mssv</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Lê Văn Ông Nội</td>
+<td>113</td>
+</tr>
+</table>
+</fieldset>
+
+<fieldset>
+<legend>Đây là cái mẩu list</legend>
+
+ul: unorder list<br />
+<ul>
+	<li>first</li>
+	<li>second</li>
+	<li>third</li>
+</ul>
+
+ol: order list<br />
+type: I, II, III..., A, B, C...
+<ol type="I">
+	<li>first</li>
+	<li>second</li>
+	<ol type="1">
+    	<li>third</li>
+    	<li>fourth</li>        
+    </ol>
+</ol>
+
+dl: description list<br />
+<dl>
+	<dt>- first</dt>
+		<dd>+ second</dd>
+    <dt>- third</dt>
+</dl>
+
+</fieldset>
+
+<fieldset>
+<legend>Mẩu form</legend>
+
+text:<br />
+<input type="text" /><br />
+
+password:<br />
+<input type="password" /><br />
+
+checkbox:<br />
+<input type="checkbox" name="checkbox1" value="checkbox1" />checkbox1<br />
+
+radio:<br />
+<input type="radio" name="radio1" value="radio1" />radio1<br />
+
+date:<br />
+<input type="date" name="date1" /><br />
+
+email1:<br />
+<input type="email" name="email1" /><br />
+
+file1:<br />
+<input type="file" name="file1" /><br />
+
+hidden:<br />
+
+html5 support:<br />
+color
+date
+datetime
+datetime-local
+email
+month
+number
+range
+search
+tel
+time
+url
+week
+</fieldset>
+
+<fieldset>
+<legend>html5 support</legend>
+
+datalist:<br />
+<input list="browsers">
+
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+
+web work: như thread bên winform<br />
+
+</fieldset>
+
+<fieldset>
+	<legend>re chuot</legend>
+	<p>Demo #1: <a href="https://www.google.com.vn/" id="searchlink" rel="subcontent">Search DD</a></p>
+	<DIV id="subcontent" style="position:absolute; visibility: hidden; border: 9px solid orange; background-color: white; width: 300px; padding: 8px;">
+
+		<p><b>Search Google:</b></p>
+		<form method="get" action="https://www.google.com.vn/" id="topform">
+		<input name="query" maxlength="255" style="width: 150px" id="topsearchbox" alt="Search" /> 
+		<input value="Search" class="topformbutton" type="submit" />
+		</form>
+
+		<div align="right"><a href="javascript:dropdowncontent.hidediv('subcontent')">Hide this DIV manually</a> | <a href="https://www.google.com.vn/">Google</a></div>
+	</DIV>
+	<script type="text/javascript">
+		//Call dropdowncontent.init("anchorID", "positionString", glideduration, "revealBehavior") at the end of the page:
+
+		dropdowncontent.init("searchlink", "right-bottom", 500, "mouseover")
+		dropdowncontent.init("contentlink", "left-top", 300, "click")
+
+	</script>
+	
+	<!------------------------------------------------------------------------------------>
+	<form action="http://www.google.com.vn/cse" id="cse-search-box" target="_blank">
+        <div>
+			<input type="hidden" name="cx" value="partner-pub-9048906902887052:8wm1dp-tc3k" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" size="31" />
+			<input type="submit" name="sa" value="Tìm kiếm" />
+        </div>
+    </form>
+    <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=vi"></script> 
+</fieldset>
+
+
+<fieldset>
+	<legend>Anh em heo (cua Tao :v)</legend>
+	<p>click on the face</p>
+	<img src="images/heo.jpg" alt="Pe Heo" usemap="#baby"/>
+	<map name="baby">
+		<area shape="circle" coords="350,150,60" alt="Heo" href="http://www.facebook.com/heo.heoo.4">
+	</map>
+</fieldset>
+
+<fieldset>
+	<legend>Anh em Py cung dau ^^!(cua Thinh)</legend>
+	<img src="images/py.jpg" alt="Pe Py cung dau" usemap="#baby2">
+	<map name="baby2">
+		<area shape="circle" coords="400,210,70" alt="Py cung dau" href="http://www.facebook.com/poppy.stubborn">
+	</map>
+</fieldset>
+<fieldset>
+	<legend>Nhac Html 5 support</legend>
+	<audio controls preload="none">
+		<source src="audios/007.wav" type="audio/mpeg">
+	</audio>
+	<video src="video/Video.mp4" controls width="480" height="360"></video>
+</fieldset>
+
+</aside>
+<br /><hr />
+</div>
+
+<footer class="TheSameClass">
+All right reserved &#169; AngrysBirds
+</footer>
+
+</body>
+</html>
